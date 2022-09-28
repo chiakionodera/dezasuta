@@ -14,107 +14,97 @@ dt,
 dd,
 ul,
 li {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  /*デフォルトの文字色、font-familyを予め当てておく*/
-  color: #000;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
-    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
 a {
-  /*下線を消す*/
-  text-decoration: none;
-  /*色を消す*/
-  color: inherit;
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
 }
 
 ul {
-  /*左の「・」を消す*/
-  list-style: none;
+    /*左の「・」を消す*/
+    list-style: none;
 }
 
 img {
-  max-width: 100%;
-  vertical-align: bottom;
-  border: none;
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
 }
-
 
 /*work1の設問1*/
 
-.blue ul{
-    display:flex;
+.blue ul {
+    display: flex;
     justify-content: space-between;
     max-width: 960px;
-    margin:0 auto;
-
+    margin: 0 auto;
 }
-.blue ul li{  
-    height:300px;
-    width:300px;
+.blue ul li {
+    height: 300px;
+    width: 300px;
     background-color: blue;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
-
-
 
 /*work1の設問2*/
 
-.red ul{
+.red ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 960px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.red ul li{
-    margin-bottom:10px;
-    height:300px;
-    width:300px;
-    background-color:red;
-    
+.red ul li {
+    margin-bottom: 10px;
+    height: 300px;
+    width: 300px;
+    background-color: red;
 }
-
 
 /*work1の設問3*/
 
-.header-wrap{
-    display:flex;
+.header-wrap {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 960px;
-    margin:0 auto;
+    margin: 0 auto;
     box-sizing: border-box;
 }
-nav ul{
+nav ul {
     display: flex;
-
 }
-nav ul li{
-    border-right:1px solid black;
-    padding:5px 20px;
-    font-size:14px;
+nav ul li {
+    border-right: 1px solid black;
+    padding: 5px 20px;
+    font-size: 14px;
 }
-nav ul li:last-child{
-    border-right:none;
+nav ul li:last-child {
+    border-right: none;
 }
 
 /*work2*/
 
-@media screen and (max-width:767px){
-    .header-wrap{
-        display:block;
-
+@media screen and (max-width: 767px) {
+    .header-wrap {
+        display: block;
     }
-    nav ul{
-        display:block;
+    nav ul {
+        display: block;
     }
- nav ul li{
-    border-right:none;
-    border-bottom:1px solid black;
-    width:300px;
- }
-
+    nav ul li {
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
 }
