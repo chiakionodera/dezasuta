@@ -57,11 +57,10 @@ img {
     max-width: 960px;
     margin: 0 auto;
     padding: 70px 10px;
-    box-sizing: border-box;
 }
 .service-all {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .service-detail {
     width: 31.5%;
