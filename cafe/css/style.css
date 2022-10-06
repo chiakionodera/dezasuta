@@ -82,6 +82,7 @@ main {
     background-color: #e8d9bf;
     font-weight: medium;
 }
+/*トップのメッセージ*/
 .top {
     text-align: center;
 }
@@ -107,6 +108,7 @@ main {
     max-width: 1000px;
     margin: 0 auto;
 }
+/*ABOUT US*/
 .ABOUT_US_wrapper {
     display: flex;
     justify-content: space-between;
@@ -136,6 +138,8 @@ main {
     font-size: 16px;
     line-height: 1.62;
 }
+
+/*MENU*/
 .MENU_wrapper {
     padding-top: 100.5px;
     max-width: 1000px;
@@ -170,7 +174,7 @@ main {
 .MENU_item {
     text-align: start;
 }
-
+/*GALLERY*/
 .GALLERY_wrapper h2 img {
     width: 245px;
     padding: 90.5px 0 23.5px 0;
@@ -180,6 +184,7 @@ main {
     display: flex;
     justify-content: space-between;
 }
+/*EVENT*/
 .EVENT_wrapper {
     max-width: 1000px;
     margin: 0 auto;
@@ -214,6 +219,7 @@ main {
 .EVENT_content p {
     line-height: 1;
 }
+/*ACCESS*/
 .ACCESS_content h2 img {
     width: 213.8px;
     padding-top: 71px;
@@ -223,6 +229,7 @@ iframe {
     width: 100%;
     height: 471px;
 }
+/*footer*/
 footer {
     background-color: #fff;
     max-width: 1000px;
@@ -255,6 +262,7 @@ footer {
     text-align: center;
     font-size: 16px;
 }
+/*トップページへ*/
 .to_TOP {
     position: fixed;
     bottom: 227px;
