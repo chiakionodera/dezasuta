@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #4f260b;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/*ヘッダー*/
+
+.header_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 7% 0 2.8%;
+    box-sizing: border-box;
+}
+.header_logo {
+    width: 226px;
+}
+.pc_nav ul {
+    display: flex;
+}
+
+.pc_nav ul li {
+    width: 105px;
+    margin-left: 55px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    text-align: center;
+}
+main {
+    font-feature-settings: "palt";
+    background-color: #e8d9bf;
+    font-weight: medium;
+}
+.top {
+    text-align: center;
+}
+.top_head {
+    padding-top: 90.5px;
+    font-size: 30px;
+}
+.top_heading {
+    padding-top: 41.5px;
+    padding-bottom: 37px;
+    font-size: 82px;
+    line-height: 1.17;
+}
+.top_foot {
+    font-size: 23px;
+    line-height: 1.65;
+    padding-bottom: 90px;
+}
+.top_heading .top_foot {
+    letter-spacing: 10em;
+}
+.top #ABOUT_US {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.ABOUT_US_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.ABOUT_US_left {
+    padding-right: 75px;
+}
+.ABOUT_US_left img {
+    width: 500px;
+    border-bottom-right-radius: 82.3px;
+}
+.ABOUT_US_right {
+    padding-top: 57px;
+    text-align: start;
+}
+.ABOUT_US_right h2 {
+    width: 272.3px;
+    padding-bottom: 46.8px;
+}
+.ABOUT_US_heading {
+    padding-bottom: 32.3px;
+    font-size: 44px;
+    line-height: 1.38;
+}
+.ABOUT_US_text {
+    padding-bottom: 42.5px;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.MENU_wrapper {
+    padding-top: 100.5px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.MENU_wrapper h2 img {
+    width: 151px;
+    align-items: center;
+    padding-bottom: 44.7px;
+}
+
+.MENU_all {
+    display: flex;
+    justify-content: space-between;
+}
+.MENU_content {
+    width: 30%;
+}
+.MENU_content img {
+    border-top-right-radius: 41.6px;
+}
+.MENU_title {
+    margin-top: -9.5px;
+    padding: 0 0 20.5px 14px;
+    color: #d30202;
+    font-size: 38px;
+}
+.MENU_text {
+    font-size: 17px;
+    line-height: 1.47;
+}
+.MENU_item {
+    text-align: start;
+}
+
+.GALLERY_wrapper h2 img {
+    width: 245px;
+    padding: 90.5px 0 23.5px 0;
+    align-items: center;
+}
+.GALLERY_slider {
+    display: flex;
+    justify-content: space-between;
+}
+.EVENT_wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.EVENT_wrapper h2 img {
+    width: 173px;
+    align-items: center;
+    padding-top: 68px;
+    padding-bottom: 35px;
+}
+
+.EVENT_content {
+    display: flex;
+    font-size: 23px;
+}
+.EVENT_content .EVENT_text {
+    border-bottom: 1px solid #4f260b;
+}
+.EVENT_detail {
+    background-color: #fff;
+    border: 3.68px solid #4f260b;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+.EVENT_content .EVENT_date {
+    padding-left: 157px;
+    padding-right: 61px;
+}
+.EVENT_content p {
+    line-height: 1;
+}
+.ACCESS_content h2 img {
+    width: 213.8px;
+    padding-top: 71px;
+    padding-bottom: 41px;
+}
+iframe {
+    width: 100%;
+    height: 471px;
+}
+footer {
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footer_content {
+    padding-top: 72px;
+    display: flex;
+}
+.design_cafe_logo_footer {
+    width: 226px;
+    padding-right: 65px;
+}
+.footer_info {
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+.footer_info p {
+    padding-bottom: 14px;
+}
+.footer_address {
+    line-height: 2.18;
+}
+.footer_contact {
+    padding-bottom: 0px;
+}
+.footer_copyright p {
+    padding-top: 65px;
+    padding-bottom: 75px;
+    text-align: center;
+    font-size: 16px;
+}
+.to_TOP {
+    position: fixed;
+    bottom: 227px;
+    right: 309px;
+}
+.to_TOP img {
+    width: 125px;
+}
