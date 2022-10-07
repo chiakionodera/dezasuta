@@ -104,7 +104,7 @@ main {
 .top_heading .top_foot {
     letter-spacing: 10em;
 }
-.top #ABOUT_US {
+.top .ABOUT_US_wrapper {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -113,9 +113,7 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.ABOUT_US_left {
-    padding-right: 75px;
-}
+
 .ABOUT_US_left img {
     width: 500px;
     border-bottom-right-radius: 82.3px;
@@ -198,7 +196,9 @@ main {
 
 .EVENT_content {
     display: flex;
+    align-items: center;
     font-size: 23px;
+    padding-bottom: 20.5px;
 }
 .EVENT_content .EVENT_text {
     border-bottom: 1px solid #4f260b;
@@ -210,15 +210,12 @@ main {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    text-align: center;
 }
 .EVENT_content .EVENT_date {
     padding-left: 157px;
     padding-right: 61px;
 }
-.EVENT_content p {
-    line-height: 1;
-}
+
 /*ACCESS*/
 .ACCESS_content h2 img {
     width: 213.8px;
@@ -226,6 +223,7 @@ main {
     padding-bottom: 41px;
 }
 iframe {
+    display: block;
     width: 100%;
     height: 471px;
 }
@@ -247,8 +245,8 @@ footer {
     font-size: 20px;
     padding-bottom: 14px;
 }
-.footer_info p {
-    padding-bottom: 14px;
+.footer_info p + p {
+    padding-top: 14px;
 }
 .footer_address {
     line-height: 2.18;
