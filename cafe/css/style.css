@@ -77,150 +77,237 @@ img {
         "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     text-align: center;
 }
+.sp_nav,
+.sp_btn {
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+        display: none;
+    }
+    .sp_btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .sp_btn span {
+        display: block;
+        position: relative;
+        top: 10px;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        transition: 0.3s;
+    }
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        transition: 0.3s;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+    .sp_btn.open span {
+        background: transparent;
+    }
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .sp_nav ul li {
+        padding: 20px 0;
+        color: #fff;
+        font-size: 18px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+            "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    }
+}
+
 main {
     font-feature-settings: "palt";
     background-color: #e8d9bf;
-    font-weight: medium;
+    font-weight: normal;
 }
 /*トップのメッセージ*/
 .top {
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .top_head {
-    padding-top: 90.5px;
+    padding-top: 90px;
     font-size: 30px;
 }
 .top_heading {
-    padding-top: 41.5px;
+    padding-top: 41px;
     padding-bottom: 37px;
     font-size: 82px;
     line-height: 1.17;
 }
 .top_foot {
     font-size: 23px;
-    line-height: 1.65;
+    line-height: 1.6;
     padding-bottom: 90px;
 }
-.top_heading .top_foot {
-    letter-spacing: 10em;
+.top_heading,
+.top_foot {
+    letter-spacing: 0.1em;
 }
-.top .ABOUT_US_wrapper {
+.top {
     max-width: 1000px;
     margin: 0 auto;
 }
 /*ABOUT US*/
-.ABOUT_US_wrapper {
+.about_us_wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-
-.ABOUT_US_left img {
+.about_us_left {
+    min-width: 50%;
     width: 500px;
-    border-bottom-right-radius: 82.3px;
 }
-.ABOUT_US_right {
+.about_us_left img {
+    border-bottom-right-radius: 82px;
+}
+.about_us_right {
     padding-top: 57px;
+    padding-left: 8%;
+    width: 41%;
     text-align: start;
 }
-.ABOUT_US_right h2 {
-    width: 272.3px;
-    padding-bottom: 46.8px;
+.about_us_right h2 {
+    width: 272px;
+    padding-bottom: 47px;
 }
-.ABOUT_US_heading {
-    padding-bottom: 32.3px;
+.about_us_heading {
+    padding-bottom: 32px;
     font-size: 44px;
     line-height: 1.38;
 }
-.ABOUT_US_text {
-    padding-bottom: 42.5px;
+.about_us_text {
+    padding-bottom: 42px;
     font-size: 16px;
     line-height: 1.62;
 }
 
 /*MENU*/
-.MENU_wrapper {
-    padding-top: 100.5px;
+.menu_wrapper {
+    padding-top: 100px;
     max-width: 1000px;
     margin: 0 auto;
 }
-.MENU_wrapper h2 img {
+.menu_wrapper h2 {
     width: 151px;
-    align-items: center;
-    padding-bottom: 44.7px;
+    padding-bottom: 44px;
+    margin: 0 auto;
 }
-
-.MENU_all {
+.menu_all {
     display: flex;
     justify-content: space-between;
 }
-.MENU_content {
+.menu_content {
     width: 30%;
 }
-.MENU_content img {
+.menu_content img {
     border-top-right-radius: 41.6px;
 }
-.MENU_title {
-    margin-top: -9.5px;
+.menu_title {
+    margin-top: -10px;
     padding: 0 0 20.5px 14px;
     color: #d30202;
     font-size: 38px;
 }
-.MENU_text {
+.menu_text {
     font-size: 17px;
     line-height: 1.47;
 }
-.MENU_item {
+.menu_item {
     text-align: start;
 }
 /*GALLERY*/
-.GALLERY_wrapper h2 img {
+.gallery_wrapper h2 {
     width: 245px;
-    padding: 90.5px 0 23.5px 0;
-    align-items: center;
+    padding: 90px 0 23px 0;
+    margin: 0 auto;
 }
-.GALLERY_slider {
+.gallery_slider {
     display: flex;
     justify-content: space-between;
 }
 /*EVENT*/
-.EVENT_wrapper {
+.event_wrapper {
     max-width: 1000px;
     margin: 0 auto;
 }
-.EVENT_wrapper h2 img {
+.event_wrapper h2 {
     width: 173px;
-    align-items: center;
+    margin: 0 auto;
     padding-top: 68px;
     padding-bottom: 35px;
 }
-
-.EVENT_content {
-    display: flex;
-    align-items: center;
-    font-size: 23px;
-    padding-bottom: 20.5px;
-}
-.EVENT_content .EVENT_text {
-    border-bottom: 1px solid #4f260b;
-}
-.EVENT_detail {
+.event_detail {
     background-color: #fff;
-    border: 3.68px solid #4f260b;
-    height: 200px;
+    border: 4px solid #4f260b;
     display: flex;
-    flex-flow: column;
     justify-content: center;
+    padding: 36px;
 }
-.EVENT_content .EVENT_date {
-    padding-left: 157px;
+.event_content {
+    display: flex;
+    font-size: 23px;
+}
+.event_content + .event_content {
+    padding-top: 20px;
+}
+.event_content .event_text {
+    text-decoration: underline;
+}
+.event_content .event_date {
     padding-right: 61px;
 }
 
 /*ACCESS*/
-.ACCESS_content h2 img {
-    width: 213.8px;
+.access_content h2 {
+    width: 213px;
     padding-top: 71px;
     padding-bottom: 41px;
+    margin: 0 auto;
 }
 iframe {
     display: block;
@@ -245,27 +332,24 @@ footer {
     font-size: 20px;
     padding-bottom: 14px;
 }
-.footer_info p + p {
-    padding-top: 14px;
+.footer_info p {
+    line-height: 1.95;
+    color: #000000;
 }
-.footer_address {
-    line-height: 2.18;
-}
-.footer_contact {
-    padding-bottom: 0px;
-}
+
 .footer_copyright p {
     padding-top: 65px;
     padding-bottom: 75px;
     text-align: center;
     font-size: 16px;
+    color: #000000;
 }
 /*トップページに飛ぶ*/
-.to_TOP {
+.to_top {
     position: fixed;
-    bottom: 227px;
-    right: 309px;
+    bottom: 40px;
+    right: 40px;
 }
-.to_TOP img {
+.to_top img {
     width: 125px;
 }
