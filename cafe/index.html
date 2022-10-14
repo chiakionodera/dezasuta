@@ -15,27 +15,33 @@
     <!--ヘッダー部分-->
     <section id="header">
         <ul class="header_slider">
-            <li><img src="images/pc_first-100.jpg" alt="店内の様子"></li>
+            <li>
+                <picture>
+                    <source media="(max-width:767px )" srcset="images/sp_main_vs@2x-100.jpg">
+                    <img src="images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+            </li>
+
         </ul>
         <div class="header_wrap">
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="デザインカフェ"></h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#ABOUT_US">ABOUT US</a></li>
-                    <li><a href="#MENU">MENU</a></li>
-                    <li><a href="#GALLERY">GALLERY</a></li>
-                    <li><a href="#EVENT">EVENT</a></li>
-                    <li><a href="#ACCESS">ACCESS</a></li>
+                    <li><a href="#about_us">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
             <div class="sp_btn"><span></span></div>
             <nav class="sp_nav">
                 <ul>
-                    <li><a href="#ABOUT_US">ABOUT US</a></li>
-                    <li><a href="#MENU">MENU</a></li>
-                    <li><a href="#GALLERY">GALLERY</a></li>
-                    <li><a href="#EVENT">EVENT</a></li>
-                    <li><a href="#ACCESS">ACCESS</a></li>
+                    <li><a href="#about_us">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,16 +53,22 @@
             <p class="top_heading">ハッピーに溢れる1日を
                 <br>1杯のコーヒーから。
             </p>
-            <p class="top_foot">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ
-                <br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
+            <p class="top_foot">毎日を丁寧に大切に過ごしたい。
+                <span>だからこそ一杯一杯丁寧にコーヒーを入れ</span>
+                <br>足を運んでくれるお客さんには落ち着く空間と
+                <span>こだわりのコーヒーを提供したい。</span>
             </p>
         </div>
 
         <!--ABOUT US-->
         <section id="about_us">
             <div class="about_us_wrapper">
+                <h3><img src="images/about_us@2x.png" alt="ABOUT_USのタイトル"></h3>
                 <div class="about_us_left">
-                    <img src="images/pc_about-100.jpg" alt="コーヒーで乾杯する様子">
+                    <picture>
+                        <source media="(max-width:767px )" srcset="images/about_us@2x-100.jpg">
+                        <img src="images/pc_about-100.jpg" alt="コーヒーで乾杯する様子">
+                    </picture>
                 </div>
                 <div class="about_us_right">
                     <h2><img src="images/about_us@2x.png" alt="ABOUT_USのタイトル"></h2>
@@ -103,6 +115,7 @@
         <section id="gallery">
             <div class="gallery_wrapper">
                 <h2><img src="images/gallery@2x.png" alt="GALLERYのタイトル"></h2>
+                <div class="gallery_photo"><img src="images/pc_gallary_03-100.jpg" alt="店内"></div>
                 <ul class="gallery_slider">
                     <li><img src="images/pc_gallary_05-100.jpg" alt="店内に集まる人々"></li>
                     <li><img src="images/pc_gallary_02-100.jpg" alt="コーヒー豆"></li>
@@ -121,14 +134,18 @@
                         <div class="event_content">
                             <p class="event_date">2020.06.23</p>
                             <a class="event_text" href="#">7月はイベント出店のため0/0お休みします</a>
+                            <a class="event_text_sp" href="#">7月はイベント出店のため0/0・・・</a>
+
                         </div>
                         <div class="event_content">
                             <p class="event_date">2020.03.15</p>
                             <a class="event_text" href="#">春の新商品新発売。話題のあのブランドとコラボ</a>
+                            <a class="event_text_sp" href="#">春の新商品新発売。話題のあのブランド・・・</a>
                         </div>
                         <div class="event_content">
                             <p class="event_date">2020.02.06</p>
                             <a class="event_text" href="#">コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
+                            <a class="event_text_sp" href="#">コーヒーの日で30％OFFイベントを・・・</a>
                         </div>
                     </div>
                 </div>
