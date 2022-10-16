@@ -88,6 +88,7 @@ main {
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .top_head {
     padding-top: 90px;
@@ -119,13 +120,12 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    .about_us_wrapper h3 {
+    .about_us_wrapper > h2 {
         display: none;
     }
 }
 .about_us_left {
-    min-width: 50%;
-    width: 500px;
+    width: 50%;
 }
 .about_us_left img {
     border-bottom-right-radius: 82px;
@@ -135,7 +135,6 @@ main {
     padding-top: 57px;
     width: 272px;
     padding-bottom: 47px;
-    text-align: start;
 }
 .about_us_right {
     padding-left: 8%;
@@ -158,9 +157,11 @@ main {
     padding-top: 100px;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .menu_wrapper h2 {
     width: 151px;
+    padding-top: 75px;
     padding-bottom: 44px;
     margin: 0 auto;
 }
@@ -184,9 +185,7 @@ main {
     font-size: 17px;
     line-height: 1.47;
 }
-.menu_item {
-    text-align: start;
-}
+
 /*GALLERY*/
 .gallery_wrapper h2 {
     width: 245px;
@@ -206,6 +205,7 @@ main {
 .event_wrapper {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .event_wrapper h2 {
     width: 173px;
@@ -223,11 +223,6 @@ main {
 .event_content {
     display: flex;
     font-size: 23px;
-}
-@media screen and (min-width: 768px) {
-    .event_text_sp {
-        display: none;
-    }
 }
 .event_content + .event_content {
     padding-top: 20px;
@@ -256,6 +251,7 @@ footer {
     background-color: #fff;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .footer_content {
     padding-top: 72px;
@@ -399,7 +395,9 @@ footer {
         padding-bottom: 25px;
     }
     .top_heading {
-        padding-bottom: 25px;
+        padding-bottom: 15px;
+        padding-top: 0;
+        letter-spacing: 0;
     }
     .top_foot {
         padding-bottom: 55px;
@@ -410,8 +408,9 @@ footer {
     .about_us_wrapper {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
-    .about_us_wrapper h3 {
+    .about_us_wrapper > h2 {
         width: 160px;
         padding-bottom: 13px;
     }
@@ -419,38 +418,39 @@ footer {
         display: none;
     }
     .about_us_right {
-        max-width: 335px;
-        margin: 0 auto;
         width: 100%;
-        padding-left: 5%;
+        padding: 0 20px;
     }
     .about_us_left img {
         border-bottom-right-radius: 0;
+        width: 100%;
     }
     .about_us_heading {
-        padding: 35px 0;
+        padding: 35px 0 15px;
     }
     .about_us_text {
-        padding-bottom: none;
+        padding-bottom: 0;
     }
     .menu_wrapper {
-        padding-top: 49px;
-        max-width: 335px;
-        margin: 0 auto;
+        padding: 49px 38px 0;
     }
     .menu_wrapper h2 {
         width: 87px;
         padding-bottom: 19px;
+        padding-top: 0;
     }
     .menu_all {
         display: block;
         margin: 0 auto;
     }
     .menu_content {
-        width: 335px;
+        width: 100%;
+    }
+    .menu_content img {
+        width: 100%;
     }
     .menu_title {
-        padding-bottom: 31px;
+        padding-bottom: 20px;
     }
     .menu_text {
         line-height: 1.58;
@@ -470,8 +470,7 @@ footer {
         display: none;
     }
     .event_wrapper {
-        max-width: 335px;
-        margin: 0 auto;
+        padding: 0 20px;
     }
 
     .event_wrapper h2 {
@@ -485,18 +484,18 @@ footer {
         border: 3px solid #4f260b;
         display: block;
         justify-content: center;
-        padding: 21px 0 21px 27px;
+        padding: 21px 27px;
     }
     .event_content {
         display: block;
         font-size: 16px;
     }
-    .event_content .event_text_sp {
-        text-decoration: underline;
-        padding-bottom: 25px;
-    }
-    .event_text {
-        display: none;
+    .event_content .event_text {
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .event_date {
         padding-bottom: 5px;
@@ -511,22 +510,22 @@ footer {
         height: 191px;
     }
     footer {
-        max-width: 335px;
+        padding: 0 20px;
     }
     .footer_content {
         display: block;
-        padding-top: 47px;
+        padding-top: 40px;
     }
 
     .design_cafe_logo_footer {
-        padding-bottom: 32px;
+        padding-bottom: 20px;
     }
-    .footer_info {
+    .footer_info p {
         font-size: 18px;
         line-height: 1.72;
     }
     .footer_copyright p {
-        padding-top: 47px;
+        padding-top: 25px;
         padding-bottom: 32px;
     }
     .to_top img {
