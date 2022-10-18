@@ -552,10 +552,7 @@ footer {
     height: 19px;
     color: #fff;
     z-index: 1;
-    z-index: 1;
 }
-
-/* 共通設定 */
 
 .slick-next::before,
 .slick-next::after,
@@ -578,8 +575,6 @@ footer {
     transform: rotate(45deg);
 }
 
-/* next */
-
 .slick-next {
     right: 20%;
 }
@@ -587,8 +582,6 @@ footer {
 .slick-next::after {
     transform: rotate(45deg);
 }
-
-/* prev */
 
 .slick-prev {
     left: 20%;
