@@ -542,15 +542,8 @@ footer {
     margin-bottom: 0;
 }
 .slick-arrow {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    padding: 0;
-    width: 19px;
-    height: 19px;
-    color: #fff;
+    width: 50px;
+    height: 50px;
     z-index: 1;
 }
 
@@ -559,11 +552,8 @@ footer {
 .slick-prev::before,
 .slick-prev::after {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: 0 auto;
+    top: 50%;
     content: "";
-    vertical-align: middle;
 }
 
 .slick-next::after,
@@ -576,19 +566,19 @@ footer {
 }
 
 .slick-next {
-    right: 20%;
+    right: 22%;
 }
 
 .slick-next::after {
-    transform: rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .slick-prev {
-    left: 20%;
+    left: 22%;
 }
 
 .slick-prev::after {
-    transform: rotate(-135deg);
+    transform: translate(-50%, -50%) rotate(-135deg);
 }
 
 @media screen and (max-width: 767px) {
